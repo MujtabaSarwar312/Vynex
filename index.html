@@ -3,424 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vynex | Digital Agency</title>
+    <title>Apex Motors & Superbikes | New & Pre-Owned Bikes</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        purple: {
-                            400: '#c084fc',
-                            500: '#a855f7',
-                            600: '#9333ea',
-                            950: '#3b0764',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="bg-black text-white font-sans selection:bg-purple-600 selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans selection:bg-red-600 selection:text-white">
 
-    <!-- Top Announcement Bar -->
-    <div class="bg-purple-950/60 border-b border-purple-900/40 text-purple-200 text-xs sm:text-sm py-2 px-4 text-center font-medium flex justify-center items-center gap-4">
-        <span>🚀 Mission: To grow local business online</span>
+    <!-- Top Bar -->
+    <div class="bg-red-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium flex justify-center items-center gap-4">
+        <span>📍 Main Highway Road, Bhiwandi</span>
         <span class="hidden sm:inline">|</span>
-        <span class="hidden sm:inline">⚡ Fast Turnaround & Premium Support</span>
+        <span class="hidden sm:inline">🕒 Mon-Sat: 10:00 AM – 9:00 PM</span>
+        <span class="hidden sm:inline">|</span>
+        <span class="font-bold">Easy Loan & Finance Available</span>
     </div>
 
     <!-- Navbar -->
-    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-purple-900/30">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="bg-purple-600 text-white font-black text-2xl px-3.5 py-1.5 rounded-xl shadow-[0_0_15px_rgba(147,51,234,0.5)]">
-                    V
+                <div class="bg-red-600 text-white font-black text-xl p-2.5 rounded-xl shadow-md">
+                    SA
                 </div>
                 <div>
-                    <h1 class="text-2xl font-black tracking-wider text-white uppercase leading-none">
-                        VYNEX<span class="text-purple-500">.</span>
+                    <h1 class="text-lg font-extrabold tracking-tight text-slate-900 leading-tight uppercase">
+                       Stellar Automotive
                     </h1>
-                    <p class="text-[10px] text-purple-400 font-bold tracking-widest uppercase mt-0.5">Digital Agency</p>
+                    <!-- <p class="text-xs text-red-600 font-semibold">एपेक्स मोटर्स & सुपरबाईक्स</p> -->
                 </div>
             </div>
 
-            <!-- Desktop Links -->
-            <div class="hidden md:flex items-center space-x-8 font-medium text-stone-300">
-                <a href="#home" class="hover:text-purple-400 transition">Home</a>
-                <a href="#services" class="hover:text-purple-400 transition">Services</a>
-                <a href="#pricing" class="hover:text-purple-400 transition">Pricing</a>
-                <a href="#about" class="hover:text-purple-400 transition">Why Us</a>
-                <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 font-medium text-slate-700">
+                <a href="#home" class="hover:text-red-600 transition">Home</a>
+                <a href="#inventory" class="hover:text-red-600 transition">Bikes</a>
+                <a href="#services" class="hover:text-red-600 transition">Services</a>
+                <a href="#reviews" class="hover:text-red-600 transition">Reviews</a>
+                <a href="#test-ride" class="hover:text-red-600 transition">Book Test Ride</a>
+                <a href="#contact" class="hover:text-red-600 transition">Contact</a>
             </div>
 
-            <!-- Call Button -->
-            <div class="hidden lg:flex items-center space-x-4">
-                <a href="tel:+917249283143" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-xl text-sm font-bold shadow-[0_0_20px_rgba(147,51,234,0.4)] transition flex items-center gap-2">
-                    <i class="fa-solid fa-phone text-xs"></i> Get Started
+            <!-- Quick Call Action -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="tel:09876543210" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-xl text-sm font-bold shadow transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> 90494 61319
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-white p-2 focus:outline-none">
+            <button id="menu-btn" class="md:hidden text-slate-700 p-2 focus:outline-none">
                 <i class="fa-solid fa-bars text-xl"></i>
             </button>
         </div>
 
         <!-- Mobile Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-black/95 border-b border-purple-900/40 px-4 pt-2 pb-4 space-y-3 font-medium text-stone-300">
-            <a href="#home" class="mobile-link block py-2 hover:text-purple-400">Home</a>
-            <a href="#services" class="mobile-link block py-2 hover:text-purple-400">Services</a>
-            <a href="#pricing" class="mobile-link block py-2 hover:text-purple-400">Pricing</a>
-            <a href="#about" class="mobile-link block py-2 hover:text-purple-400">Why Us</a>
-            <a href="#contact" class="mobile-link block py-2 hover:text-purple-400">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-3 font-medium">
+            <a href="#home" class="mobile-link block py-2 hover:text-red-600">Home</a>
+            <a href="#inventory" class="mobile-link block py-2 hover:text-red-600">Bikes</a>
+            <a href="#services" class="mobile-link block py-2 hover:text-red-600">Services</a>
+            <a href="#reviews" class="mobile-link block py-2 hover:text-red-600">Reviews</a>
+            <a href="#test-ride" class="mobile-link block py-2 hover:text-red-600">Book Test Ride</a>
+            <a href="#contact" class="mobile-link block py-2 hover:text-red-600">Contact</a>
             <div class="pt-2">
-                <a href="tel:+917249283143" class="w-full bg-purple-600 text-white text-center py-2.5 rounded-xl font-bold block">
-                    Call +91 7249283143
+                <a href="tel:09876543210" class="w-full bg-red-600 text-white text-center py-2.5 rounded-xl font-bold block">
+                    Call Showroom
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative py-28 lg:py-36 overflow-hidden">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+    <section id="home" class="relative text-white py-28 lg:py-40 overflow-hidden">
+        <div class="absolute inset-0 bg-slate-950">
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=1600" alt="Showroom Bikes" class="w-full h-full object-cover opacity-40" />
+        </div>
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-4xl">
-            <div class="inline-flex items-center gap-2 bg-purple-950/80 border border-purple-500/30 text-purple-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-8 backdrop-blur-sm shadow-[0_0_15px_rgba(147,51,234,0.2)]">
-                <i class="fa-solid fa-rocket text-purple-400"></i> Goal: Growing Local Businesses Online
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+            <div class="inline-flex items-center gap-2 bg-red-600/40 border border-red-500/50 text-red-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
+                <i class="fa-solid fa-star text-amber-400"></i> 4.8 Rating (142+ Reviews) · Premium Bike Dealer
             </div>
-            
-            <h1 class="text-4xl sm:text-7xl font-black tracking-tight mb-6 leading-tight">
-                Your Business<span class="text-purple-500">.</span> <br />
-                <span class="bg-gradient-to-r from-purple-400 via-purple-500 to-white bg-clip-text text-transparent">
-                    Our Digital Expertise.
-                </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-4 drop-shadow-md">
+                Ride Home Your <span class="text-red-500">Dream Bike</span>
             </h1>
-
-            <p class="text-lg sm:text-xl text-stone-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-                We help local shops, showrooms, cafes, and service businesses establish a dominant online presence, attract nearby customers, and scale their revenue.
+            <p class="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed drop-shadow">
+                Explore top brands of brand-new motorcycles and certified pre-owned bikes with warranty, instant RTO transfer, and low-downpayment EMI options.
             </p>
-
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#pricing" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-4 rounded-xl shadow-[0_0_30px_rgba(147,51,234,0.5)] transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
-                    View Pricing Plans <i class="fa-solid fa-arrow-right text-xs"></i>
+                <a href="#test-ride" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                    Book Test Ride 🏍️
                 </a>
-                <a href="#services" class="bg-stone-900/80 hover:bg-stone-900 border border-purple-900/50 text-white font-bold px-8 py-4 rounded-xl transition flex items-center justify-center">
-                    Explore Services
+                <a href="#inventory" class="bg-slate-900/80 hover:bg-slate-900 backdrop-blur-md border border-slate-700 text-white font-bold px-8 py-4 rounded-xl transition">
+                    Browse Inventory 🔍
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Services Grid -->
-    <section id="services" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <!-- Highlights Bar -->
+    <section id="services" class="bg-white border-b border-slate-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="flex flex-col items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mb-2"><i class="fa-solid fa-motorcycle text-xl"></i></div>
+                <h4 class="font-bold text-slate-900">New & Used Bikes</h4>
+                <p class="text-xs text-slate-500">Wide range of options</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mb-2"><i class="fa-solid fa-shield-halved text-xl"></i></div>
+                <h4 class="font-bold text-slate-900">Quality Verified</h4>
+                <p class="text-xs text-slate-500">50+ points inspection</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mb-2"><i class="fa-solid fa-rotate text-xl"></i></div>
+                <h4 class="font-bold text-slate-900">Best Exchange Price</h4>
+                <p class="text-xs text-slate-500">Sell or upgrade your bike</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="bg-red-100 text-red-600 p-3 rounded-full mb-2"><i class="fa-solid fa-wrench text-xl"></i></div>
+                <h4 class="font-bold text-slate-900">Easy Financing</h4>
+                <p class="text-xs text-slate-500">Low interest EMI schemes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Showcase -->
+    <section id="inventory" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <span class="text-purple-400 font-bold uppercase text-xs tracking-widest">Solutions</span>
-            <h2 class="text-3xl sm:text-5xl font-black text-white mt-2 mb-4">How We Grow Your Local Business</h2>
-            <p class="text-stone-400">Everything you need to step out of the shadows and command digital attention.</p>
+            <span class="text-red-600 font-bold uppercase text-sm tracking-wider">Featured Stock</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1 mb-4">Latest Bikes in Stock</h2>
+            <p class="text-slate-600">Handpicked brand new models and certified pre-owned bikes in top mechanical condition.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-stone-950 border border-purple-950 hover:border-purple-600/60 p-8 rounded-2xl transition duration-300 hover:-translate-y-1 relative flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="p-3.5 bg-purple-950/80 border border-purple-800/40 text-purple-400 rounded-xl group-hover:bg-purple-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-globe text-xl"></i>
-                        </div>
-                        <span class="text-[10px] font-bold bg-purple-950 text-purple-300 px-2.5 py-1 rounded-full border border-purple-800/30">Essential</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Website Development</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed mb-6">High-converting, lightning-fast modern websites built to turn local visitors into paying customers.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Bike Card 1 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition">
+                <div class="h-56 overflow-hidden bg-slate-100 relative">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800" alt="Royal Enfield Hunter 350" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+                    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Brand New</span>
                 </div>
-                <a href="#contact" class="text-purple-400 font-bold text-sm flex items-center gap-2 group-hover:text-purple-300">
-                    Get Quote <i class="fa-solid fa-arrow-right text-xs"></i>
-                </a>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">New Arrival</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2 text-slate-900">Royal Enfield Hunter 350</h3>
+                    
+                    <div class="flex gap-4 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                        <span>Year: 2026</span>
+                        <span>•</span>
+                        <span>Odometer: 0 km</span>
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold">
+                        <span class="text-red-600 text-xl">₹1,70,000</span>
+                        <span class="text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-lg">In Stock</span>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hi!%20I%20am%20interested%20in%20the%20Royal%20Enfield%20Hunter%20350%20priced%20at%20₹1,70,000." target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-slate-900 hover:bg-slate-800 text-white text-center py-2.5 rounded-xl font-bold text-sm block transition">
+                        Inquire on WhatsApp <i class="fa-brands fa-whatsapp text-green-400 ml-1"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="bg-stone-950 border border-purple-950 hover:border-purple-600/60 p-8 rounded-2xl transition duration-300 hover:-translate-y-1 relative flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="p-3.5 bg-purple-950/80 border border-purple-800/40 text-purple-400 rounded-xl group-hover:bg-purple-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-chart-line text-xl"></i>
-                        </div>
-                        <span class="text-[10px] font-bold bg-purple-950 text-purple-300 px-2.5 py-1 rounded-full border border-purple-800/30">High Growth</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Google Maps & SEO</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed mb-6">Dominate local searches when customers look for services near them in your area.</p>
+            <!-- Bike Card 2 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition">
+                <div class="h-56 overflow-hidden bg-slate-100 relative">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=800" alt="KTM Duke 390" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+                    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Used - Like New</span>
                 </div>
-                <a href="#contact" class="text-purple-400 font-bold text-sm flex items-center gap-2 group-hover:text-purple-300">
-                    Get Quote <i class="fa-solid fa-arrow-right text-xs"></i>
-                </a>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Certified Pre-Owned</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2 text-slate-900">KTM Duke 390</h3>
+                    
+                    <div class="flex gap-4 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                        <span>Year: 2024</span>
+                        <span>•</span>
+                        <span>Odometer: 12,500 km</span>
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold">
+                        <span class="text-red-600 text-xl">₹2,35,000</span>
+                        <span class="text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-lg">Warranty Included</span>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hi!%20I%20am%20interested%20in%20the%20KTM%20Duke%20390%20priced%20at%20₹2,35,000." target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-slate-900 hover:bg-slate-800 text-white text-center py-2.5 rounded-xl font-bold text-sm block transition">
+                        Inquire on WhatsApp <i class="fa-brands fa-whatsapp text-green-400 ml-1"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="bg-stone-950 border border-purple-950 hover:border-purple-600/60 p-8 rounded-2xl transition duration-300 hover:-translate-y-1 relative flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="p-3.5 bg-purple-950/80 border border-purple-800/40 text-purple-400 rounded-xl group-hover:bg-purple-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-rocket text-xl"></i>
-                        </div>
-                        <span class="text-[10px] font-bold bg-purple-950 text-purple-300 px-2.5 py-1 rounded-full border border-purple-800/30">Popular</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Social Media Growth</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed mb-6">Engaging content, ads, and brand presence on Instagram & Facebook tailored for local audiences.</p>
+            <!-- Bike Card 3 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition">
+                <div class="h-56 overflow-hidden bg-slate-100 relative">
+                    <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&q=80&w=800" alt="Yamaha YZF R15 V4" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+                    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Brand New</span>
                 </div>
-                <a href="#contact" class="text-purple-400 font-bold text-sm flex items-center gap-2 group-hover:text-purple-300">
-                    Get Quote <i class="fa-solid fa-arrow-right text-xs"></i>
-                </a>
-            </div>
+                <div class="p-6">
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Bestseller</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2 text-slate-900">Yamaha YZF R15 V4</h3>
+                    
+                    <div class="flex gap-4 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                        <span>Year: 2026</span>
+                        <span>•</span>
+                        <span>Odometer: 0 km</span>
+                    </div>
 
-            <div class="bg-stone-950 border border-purple-950 hover:border-purple-600/60 p-8 rounded-2xl transition duration-300 hover:-translate-y-1 relative flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="p-3.5 bg-purple-950/80 border border-purple-800/40 text-purple-400 rounded-xl group-hover:bg-purple-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-mobile-screen-button text-xl"></i>
-                        </div>
-                        <span class="text-[10px] font-bold bg-purple-950 text-purple-300 px-2.5 py-1 rounded-full border border-purple-800/30">Conversion</span>
+                    <div class="flex justify-between items-center font-bold">
+                        <span class="text-red-600 text-xl">₹1,82,000</span>
+                        <span class="text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-lg">Instant Delivery</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">WhatsApp Automation</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed mb-6">Direct customer booking system and instant inquiry setups that run 24/7 on autopilot.</p>
+
+                    <a href="https://wa.me/919876543210?text=Hi!%20I%20am%20interested%20in%20the%20Yamaha%20YZF%20R15%20V4%20priced%20at%20₹1,82,000." target="_blank" rel="noopener noreferrer" class="mt-5 w-full bg-slate-900 hover:bg-slate-800 text-white text-center py-2.5 rounded-xl font-bold text-sm block transition">
+                        Inquire on WhatsApp <i class="fa-brands fa-whatsapp text-green-400 ml-1"></i>
+                    </a>
                 </div>
-                <a href="#contact" class="text-purple-400 font-bold text-sm flex items-center gap-2 group-hover:text-purple-300">
-                    Get Quote <i class="fa-solid fa-arrow-right text-xs"></i>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-24 bg-stone-950/80 border-t border-purple-950/60 relative">
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-slate-100 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-purple-400 font-bold uppercase text-xs tracking-widest">Transparent Pricing</span>
-                <h2 class="text-3xl sm:text-5xl font-black text-white mt-2 mb-4">Choose Your Growth Plan</h2>
-                <p class="text-stone-400">Simple, predictable packages built specifically to suit your business scale.</p>
+                <span class="text-red-600 font-bold uppercase text-sm tracking-wider">Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1 mb-2">Customer Feedback</h2>
+                <div class="flex items-center justify-center gap-2 mt-3">
+                    <div class="flex text-amber-500">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="font-bold text-slate-900">4.8 out of 5</span>
+                    <span class="text-slate-500 text-sm">(142 Google Reviews)</span>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-                <!-- Free Plan -->
-                <div class="bg-black border border-purple-900/40 p-8 rounded-3xl flex flex-col justify-between hover:border-purple-600/50 transition">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-stone-400 bg-stone-900 px-3 py-1 rounded-full">Trial Package</span>
-                        <h3 class="text-2xl font-black text-white mt-4">Free Plan</h3>
-                        <div class="my-6">
-                            <span class="text-4xl font-black text-white">₹0</span>
-                            <span class="text-stone-400 text-sm">/ Free Trial</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-lg shadow-sm">
+                                    R
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm leading-tight">Rohan Patil</h4>
+                                    <p class="text-xs text-slate-500">Verified Buyer · Local Guide</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-quote-left text-slate-200 text-xl"></i>
                         </div>
-                        <ul class="space-y-4 text-sm text-stone-300 border-t border-purple-950 pt-6">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> Free website (No custom domain)</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> 3 Day Content Calendar</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> Watermark on Reels & Website</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> Instagram Page Revision</li>
-                        </ul>
-                    </div>
-                    <a href="https://wa.me/917249283143?text=Hi%20Vynex!%20I%20want%20to%20start%20with%20the%20Free%20Plan." target="_blank" class="mt-8 bg-stone-900 hover:bg-stone-800 text-white font-bold py-3.5 rounded-xl text-center block transition">
-                        Get Started Free
-                    </a>
-                </div>
-
-                <!-- Starter Plan (Highlighted) -->
-                <div class="bg-gradient-to-b from-purple-950/60 via-black to-black border-2 border-purple-500 p-8 rounded-3xl flex flex-col justify-between relative shadow-[0_0_30px_rgba(147,51,234,0.3)] transform lg:-translate-y-2">
-                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-md">Most Popular</span>
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-purple-300 bg-purple-950 px-3 py-1 rounded-full">Essential Growth</span>
-                        <h3 class="text-2xl font-black text-white mt-4">Starter Plan</h3>
-                        <div class="my-6">
-                            <span class="text-4xl font-black text-purple-400">₹5,000</span>
-                            <span class="text-stone-400 text-sm">/ Package</span>
+                        <div class="flex text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <ul class="space-y-4 text-sm text-stone-200 border-t border-purple-900/60 pt-6">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> 1 Page Custom Website</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> 1 Week Content Calendar</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> 3 Reels & 4 Static Posts</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> Story Management</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> Comment Replies Management</li>
-                        </ul>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"Bought a certified pre-owned Duke 390. The bike condition was immaculate and all documents were transferred seamlessly within 3 days!"</p>
                     </div>
-                    <a href="https://wa.me/917249283143?text=Hi%20Vynex!%20I%20am%20interested%20in%20the%20Starter%20Plan%20(₹5,000)." target="_blank" class="mt-8 bg-purple-600 hover:bg-purple-700 text-white font-bold py-3.5 rounded-xl text-center block shadow-[0_0_20px_rgba(147,51,234,0.4)] transition">
-                        Select Starter Plan
-                    </a>
+                    <div class="mt-4 pt-4 border-t border-slate-100 bg-red-50/50 p-3 rounded-xl">
+                        <p class="text-xs font-bold text-red-800 mb-0.5">Response from owner:</p>
+                        <p class="text-xs text-slate-600 italic">"Thank you Rohan! Enjoy your rides safely!"</p>
+                    </div>
                 </div>
 
-                <!-- Growth Plan -->
-                <div class="bg-black border border-purple-900/40 p-8 rounded-3xl flex flex-col justify-between hover:border-purple-600/50 transition">
+                <!-- Review 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-purple-400 bg-purple-950/60 px-3 py-1 rounded-full">Maximum Scale</span>
-                        <h3 class="text-2xl font-black text-white mt-4">Growth Plan</h3>
-                        <div class="my-6">
-                            <span class="text-4xl font-black text-white">₹10,000</span>
-                            <span class="text-stone-400 text-sm">/ Package</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-lg shadow-sm">
+                                    A
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm leading-tight">Amit Verma</h4>
+                                    <p class="text-xs text-slate-500">Customer · 12 reviews</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-quote-left text-slate-200 text-xl"></i>
                         </div>
-                        <ul class="space-y-4 text-sm text-stone-300 border-t border-purple-950 pt-6">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> Dynamic Multi-Page Website</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> 1 Month Full Content Calendar</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> 15 Reels & 15 Static Posts</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-purple-400"></i> Instagram DM & Comment Automation</li>
-                        </ul>
+                        <div class="flex text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"Best showroom in town for both new and second-hand bikes. Honest pricing and transparent evaluation for exchange offers."</p>
                     </div>
-                    <a href="https://wa.me/917249283143?text=Hi%20Vynex!%20I%20am%20interested%20in%20the%20Growth%20Plan%20(₹10,000)." target="_blank" class="mt-8 bg-stone-900 hover:bg-stone-800 text-white font-bold py-3.5 rounded-xl text-center block transition">
-                        Select Growth Plan
-                    </a>
-                </div>
-            </div>
-
-            <!-- Customized Plan Banner -->
-            <div class="mt-12 bg-gradient-to-r from-purple-950/40 via-stone-950 to-purple-950/40 border border-purple-900/40 p-8 rounded-3xl text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
-                <div>
-                    <h4 class="text-xl font-bold text-white">Need a Customized Strategy?</h4>
-                    <p class="text-stone-400 text-sm mt-1">Have unique goals or specific business requirements? We'll craft a plan tailored specifically for you.</p>
-                </div>
-                <a href="https://wa.me/917249283143?text=Hi%20Vynex!%20I%20need%20a%20Customized%20Plan%20according%20to%20my%20business%20requirements." target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-6 py-3.5 rounded-xl whitespace-nowrap shadow-[0_0_15px_rgba(147,51,234,0.4)] transition">
-                    Customize Your Plan <i class="fa-brands fa-whatsapp ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section id="about" class="py-24 bg-stone-950 border-y border-purple-950/60 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-purple-400 font-bold uppercase text-xs tracking-widest">Why Partner With Vynex</span>
-                <h2 class="text-3xl sm:text-5xl font-black text-white mt-2 mb-6 leading-tight">
-                    Built Specifically For Local Storefronts & Brands.
-                </h2>
-                <p class="text-stone-400 leading-relaxed mb-8">
-                    Generic agencies build overpriced websites that look nice but bring zero customers. At <strong>Vynex</strong>, we focus strictly on local lead generation, search visibility, and converting visitors into paying foot traffic.
-                </p>
-
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-circle-check text-purple-500 text-lg"></i>
-                        <span class="text-stone-200 font-medium">Tailored Specifically for Local Businesses & Storefronts</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-circle-check text-purple-500 text-lg"></i>
-                        <span class="text-stone-200 font-medium">100% Mobile-Optimized & Lightning Fast Performance</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-circle-check text-purple-500 text-lg"></i>
-                        <span class="text-stone-200 font-medium">Direct WhatsApp Integration for Zero Lead Loss</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-circle-check text-purple-500 text-lg"></i>
-                        <span class="text-stone-200 font-medium">Affordable Packages with Proven Local ROI</span>
+                    <div class="mt-4 pt-4 border-t border-slate-100 bg-red-50/50 p-3 rounded-xl">
+                        <p class="text-xs font-bold text-red-800 mb-0.5">Response from owner:</p>
+                        <p class="text-xs text-slate-600 italic">"Thanks Amit! Glad we could help."</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="bg-gradient-to-br from-purple-950/40 to-black p-8 sm:p-12 rounded-3xl border border-purple-900/40 relative overflow-hidden">
-                <div class="space-y-8 relative z-10">
-                    <div class="border-b border-purple-900/40 pb-6">
-                        <span class="text-4xl font-black text-purple-400">100%</span>
-                        <p class="text-stone-300 font-semibold mt-1">Focus on Local Digital Growth</p>
-                    </div>
-                    <div class="border-b border-purple-900/40 pb-6">
-                        <span class="text-4xl font-black text-white">Direct Lead</span>
-                        <p class="text-stone-300 font-semibold mt-1">WhatsApp & Phone Call Routing</p>
-                    </div>
+                <!-- Review 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <span class="text-4xl font-black text-purple-400">End-to-End</span>
-                        <p class="text-stone-300 font-semibold mt-1">Setup, Optimization & Support</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-red-600 text-white font-bold flex items-center justify-center text-lg shadow-sm">
+                                    S
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm leading-tight">Siddhesh Shinde</h4>
+                                    <p class="text-xs text-slate-500">Local Guide · 34 reviews</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-quote-left text-slate-200 text-xl"></i>
+                        </div>
+                        <div class="flex text-amber-400 mb-3 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">"Booked a test ride via WhatsApp and got the bike ready within 15 minutes of arriving. Excellent staff behaviour!"</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Consultation / Contact Section -->
-    <section id="contact" class="py-24 max-w-4xl mx-auto px-4">
-        <div class="bg-stone-950 rounded-3xl border border-purple-900/50 p-8 sm:p-12 shadow-[0_0_50px_rgba(147,51,234,0.1)]">
-            <div class="text-center max-w-lg mx-auto mb-10">
-                <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Transform Your Business</h2>
-                <p class="text-stone-400 text-sm">Fill out the form below to receive a free digital growth strategy via WhatsApp.</p>
+    <!-- Test Ride / Inquiry Form -->
+    <section id="test-ride" class="py-20 max-w-4xl mx-auto px-4">
+        <div class="bg-white rounded-3xl shadow-lg border border-slate-200 p-8 sm:p-12">
+            <div class="text-center max-w-lg mx-auto mb-8">
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Book a Test Ride</h2>
+                <p class="text-slate-600 text-sm">Schedule your ride in advance and get instant confirmation on WhatsApp.</p>
             </div>
 
-            <form id="consultation-form" class="space-y-6">
+            <form id="test-ride-form" class="space-y-6">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Your Name</label>
-                        <input type="text" id="name" required placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-black border border-purple-900/50 text-white placeholder-stone-600 focus:border-purple-500 focus:outline-none">
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Your Name</label>
+                        <input type="text" id="name" required placeholder="Rahul Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:outline-none" />
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Phone / WhatsApp</label>
-                        <input type="tel" id="phone" required placeholder="+91 9876543210" class="w-full px-4 py-3.5 rounded-xl bg-black border border-purple-900/50 text-white placeholder-stone-600 focus:border-purple-500 focus:outline-none">
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder="9876543210" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:outline-none" />
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Business Name</label>
-                        <input type="text" id="businessName" required placeholder="e.g. Apex Cafe / Royal Motors" class="w-full px-4 py-3.5 rounded-xl bg-black border border-purple-900/50 text-white placeholder-stone-600 focus:border-purple-500 focus:outline-none">
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Bike Model Interested</label>
+                        <input type="text" id="model" required placeholder="e.g. Royal Enfield Hunter" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:outline-none" />
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Selected Plan / Service</label>
-                        <select id="service" class="w-full px-4 py-3.5 rounded-xl bg-black border border-purple-900/50 text-white focus:border-purple-500 focus:outline-none">
-                            <option value="Starter Plan (₹5,000)">Starter Plan (₹5,000)</option>
-                            <option value="Growth Plan (₹10,000)">Growth Plan (₹10,000)</option>
-                            <option value="Free Trial Plan">Free Trial Plan</option>
-                            <option value="Customized Requirements">Customized Requirements</option>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Type</label>
+                        <select id="type" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:outline-none">
+                            <option value="Brand New">Brand New Bike</option>
+                            <option value="Pre-Owned">Pre-Owned / Used</option>
+                            <option value="Exchange Inquiry">Old Bike Exchange</option>
                         </select>
                     </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Preferred Date</label>
+                        <input type="date" id="date" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:outline-none" />
+                    </div>
                 </div>
 
-                <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-xl shadow-[0_0_25px_rgba(147,51,234,0.4)] transition flex items-center justify-center gap-2 text-base cursor-pointer">
-                    <i class="fa-brands fa-whatsapp text-xl"></i> Request Free Consultation
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-lg cursor-pointer">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> Request Test Ride on WhatsApp
                 </button>
             </form>
 
-            <div id="form-success" class="hidden mt-4 p-4 bg-purple-950/80 border border-purple-600 text-purple-200 text-center rounded-xl font-medium text-sm">
-                WhatsApp opened with your details! Our team will get back to you shortly.
+            <div id="booking-success" class="hidden mt-4 p-4 bg-green-50 border border-green-200 text-green-800 text-center rounded-xl font-medium">
+                WhatsApp opened with your request! Our representative will contact you shortly.
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-stone-400 py-12 border-t border-purple-950/60">
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-                <h3 class="text-white text-xl font-black tracking-wider mb-3">VYNEX<span class="text-purple-500">.</span></h3>
-                <p class="text-sm text-stone-400 leading-relaxed mb-4">Your Business. Our Digital Expertise.</p>
-                <p class="text-xs text-purple-400 font-semibold">To grow local business online.</p>
+                <h3 class="text-white text-lg font-bold mb-3">Apex Motors & Superbikes</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Your trusted partner for brand new and quality pre-owned motorcycles in Bhiwandi.
+                </p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-3">Quick Navigation</h4>
+                <h4 class="text-white font-bold mb-3">Quick Links</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#home" class="hover:text-purple-400 transition">Home</a></li>
-                    <li><a href="#services" class="hover:text-purple-400 transition">Digital Services</a></li>
-                    <li><a href="#pricing" class="hover:text-purple-400 transition">Pricing Plans</a></li>
-                    <li><a href="#about" class="hover:text-purple-400 transition">Why Choose Vynex</a></li>
-                    <li><a href="#contact" class="hover:text-purple-400 transition">Get Consultation</a></li>
+                    <li><a href="#home" class="hover:text-red-500 transition">Home</a></li>
+                    <li><a href="#inventory" class="hover:text-red-500 transition">Current Bike Stock</a></li>
+                    <li><a href="#reviews" class="hover:text-red-500 transition">Customer Reviews</a></li>
+                    <li><a href="#test-ride" class="hover:text-red-500 transition">Book a Test Ride</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-3">Direct Contact</h4>
-                <div class="space-y-2 text-sm">
-                    <p class="flex items-center gap-2">
-                        <i class="fa-solid fa-phone text-purple-500"></i> 
-                        <a href="tel:+917249283143" class="hover:text-purple-400 transition">+91 7249283143</a>
-                    </p>
-                    <p class="flex items-center gap-2">
-                        <i class="fa-solid fa-envelope text-purple-500"></i> 
-                        <a href="mailto:mujtabasarwar312@gmail.com" class="hover:text-purple-400 transition">mujtabasarwar312@gmail.com</a>
-                    </p>
-                </div>
+                <h4 class="text-white font-bold mb-3">Showroom Location</h4>
+                <p class="text-sm mb-2">Plot No. 42, Main Highway Road, Near City Center, Bhiwandi, Maharashtra 421302</p>
+                <p class="text-sm mb-1">Phone: <a href="tel:09876543210" class="text-red-500 font-bold">098765 43210</a></p>
+                <p class="text-sm">Hours: Mon-Sat: 10:00 AM – 9:00 PM | Sun: 10:00 AM – 4:00 PM</p>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 pt-8 border-t border-stone-900 text-center text-xs text-stone-600">
-            &copy; <span id="year"></span> VYNEX DIGITAL. All rights reserved.
+        <div class="max-w-7xl mx-auto px-4 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; <span id="year"></span> Apex Motors & Superbikes. All rights reserved.
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/917249283143?text=Hi%20Vynex!%20I%20want%20to%20discuss%20growing%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-purple-600 text-white p-4 rounded-full shadow-[0_0_30px_rgba(147,51,234,0.6)] hover:bg-purple-500 hover:scale-110 transition-all duration-300 flex items-center justify-center group" aria-label="Chat with Vynex on WhatsApp">
+    <a href="https://wa.me/919876543210?text=Hi!%20I%20would%20like%20to%20inquire%20about%20a%20bike%20at%20Apex%20Motors." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 flex items-center justify-center group" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp text-2xl"></i>
         <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-2 transition-all duration-500 ease-in-out text-sm font-semibold">
-            Chat with Vynex!
+            Chat with Showroom!
         </span>
     </a>
 
@@ -442,24 +418,27 @@
             });
         });
 
-        document.getElementById('consultation-form').addEventListener('submit', function(e) {
+        document.getElementById('test-ride-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
-            const businessName = document.getElementById('businessName').value;
-            const service = document.getElementById('service').value;
+            const model = document.getElementById('model').value;
+            const type = document.getElementById('type').value;
+            const date = document.getElementById('date').value;
 
-            const message = `*New Growth Inquiry - Vynex*%0A%0A` +
-                            `*Client Name:* ${name}%0A` +
+            const ownerWhatsApp = "919876543210";
+
+            const message = `*New Test Ride Request - Apex Motors*%0A%0A` +
+                            `*Name:* ${name}%0A` +
                             `*Phone:* ${phone}%0A` +
-                            `*Business Name:* ${businessName}%0A` +
-                            `*Selected Plan:* ${service}%0A%0A` +
-                            `Hi Vynex Team, I want to grow my business online!`;
+                            `*Bike Model:* ${model}%0A` +
+                            `*Preference:* ${type}%0A` +
+                            `*Preferred Date:* ${date}%0A%0A` +
+                            `Please confirm availability for a test ride!`;
 
-            window.open(`https://wa.me/917249283143?text=${message}`, '_blank');
-            
-            document.getElementById('form-success').classList.remove('hidden');
+            window.open(`https://wa.me/${ownerWhatsApp}?text=${message}`, '_blank');
+            document.getElementById('booking-success').classList.remove('hidden');
         });
     </script>
 </body>
